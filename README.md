@@ -21,7 +21,15 @@ Aside from these examples there may be other situations where it makes sense to 
 
 ## Laravel 5 Coding
 
-Section coming soon.
+All Laravel projects should aim to fit the coding style of the Laravel internals and the auto generated files.
+
+- Indentation SHOULD use four spaces.
+- Classes SHOULD be imported at the top of the file.
+- The RECOMMENDED order of class imports is shortest path to longest path then alphabetically based on class name for paths of the same length.
+- Classes SHOULD NOT be referenced by their full namespace path elsewhere in a file unless this is done to match the Laravel coding style, for instance in factory definitions.
+- In even in those circumstances it MAY be appropriate to convert a file to using `use` statements at the start of the file
+- Classes SHOULD NOT be renamed unless to avoid a conflict with another class in the current namespace.
+- Class imports MUST follow the following format `use App\Path\To\Class;`. They MUST NOT use `use \App\Path\To\Class` or `use App\Path\To\Class as Class;`.
 
 ## WordPress Coding
 
